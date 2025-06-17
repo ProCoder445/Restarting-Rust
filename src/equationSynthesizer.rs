@@ -14,10 +14,15 @@ impl<'a> EquationSynthesizer<'a> {
     }
 
     pub fn parse(self: &mut Self) {
-        let mut parenthetical: (Option<String>, Option<Vec<String>>);
-        let mut terms: i8;
-        let mut paren1 = self.seperate("(");
-        println!("{}", self.equation);
-        println!("paren1: {:#?}", paren1);
+
+        let parts = self.equation.chars().collect::<Vec<char>>();
+
+        let mut letter= ' ';
+
+        parts.iter().for_each(|&part| letter = part )
+        
+        
+
+
     }
 }
