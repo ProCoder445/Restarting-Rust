@@ -6,6 +6,8 @@ use summation::Summation;
 
 
 fn main() {
-    let synthesizer = EquationSynthesizer::new();
-    let summation = Summation::new(synthesizer);    
+    let mut synthesizer = EquationSynthesizer::new(String::from("i+(i)"));
+    let summation = Summation::new(&synthesizer);
+    
+    synthesizer.parse();
 }
