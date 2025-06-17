@@ -16,13 +16,6 @@ impl<'a> EquationSynthesizer<'a> {
     pub fn parse(self: &mut Self) {
 
         let parts = self.equation.chars().collect::<Vec<char>>();
-
-        let mut letter= ' ';
-
-        parts.iter().for_each(|&part| letter = part )
         
-        
-
-
     }
 }
