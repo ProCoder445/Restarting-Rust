@@ -1,5 +1,6 @@
 mod equationSynthesizer;
 mod summation;
+mod Tokenizer;
 
 use equationSynthesizer::EquationSynthesizer;
 use summation::Summation;
